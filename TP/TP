@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title>TP Cédric</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+  
+    <table>
+        <tr>
+            <th>x</th>
+            <th>0</th>
+            <th>1</th>
+        </tr>
+        <tr>
+            <th>0</th>
+            <td>0</td>
+            <td>0</td>
+        <tr>
+            <th>1</th>
+            <td>0</td>
+            <td>1</td> 
+        </tr>
+    </table>
+    
+    
+    <table>
+        <tr>
+            <th>+</th>
+            <th>0</th>
+            <th>1</th>
+        </tr>
+        <tr>
+            <th>0</th>
+            <td>0</td>
+            <td>1</td>
+        <tr>
+            <th>1</th>
+            <td>1</td>
+            <td>10</td> 
+        </tr>
+    </table>    
+  
+  </body>
+</html>
+  
