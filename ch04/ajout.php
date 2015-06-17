@@ -9,7 +9,7 @@
 
 <?php
 
-	if ($_POST['envoyer']) {
+	if isset($_POST['envoyer']) {
 		
 		$email = $_POST['email'];
 		
@@ -19,7 +19,7 @@
                 
             echo "Bravo votre adresse est valide<br>";
         } else {
-            echo "domag votre adresse n'est pas valide<br>";
+            echo "domage votre adresse n'est pas valide<br>";
         }
         
         
@@ -34,9 +34,9 @@
 		
 		$sql = "INSERT INTO liste_email VALUES (NULL, '" . $email_correct . "', NOW() )";
         if ( $result = $dbh->query( $sql ) ) {
-            echo $result->nom_rows . " Nb de lignes ajouté.";
+            echo $result->affected rows . "  lignes ajouté.";
         } else {
-            echo "L'erreur est la suivante: ", $dbh->error, " est survenue<br>";
+            echo "L'erreur: ", $dbh->error, " est survenue<br>";
         }
 		
     } else { 
@@ -51,8 +51,11 @@
 </form>
 
 
+
+
 <?php
-    mixed mysqli::query ( string $query [, int $resultmode = MYSQLI_STORE_RESULT ] )
+}
+mixed mysqli::query ( string $query [, int $resultmode = MYSQLI_STORE_RESULT ] )
 ?>
 
 </body> 
